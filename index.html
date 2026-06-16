@@ -235,7 +235,7 @@ footer{background:var(--dark-2);border-top:1px solid var(--glass-border);padding
   .services::before{background-image:url('https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=800')}
   .why-us::before{background-image:url('https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=800')}
   .testimonials::before{background-image:url('https://images.pexels.com/photos/5910749/pexels-photo-5910749.jpeg?auto=compress&cs=tinysrgb&w=800')}
-  .hero{background-image:url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800')}
+  .hero{background-image:url('https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=800')}
 }
 @media(max-width:480px){
   .hero-ctas{flex-direction:column;align-items:center}
@@ -751,13 +751,17 @@ window.addEventListener('scroll',()=>{
 });
 setTimeout(()=>{if(!popupState.timed&&!document.querySelector('.popup-overlay.active')){popupState.timed=true;document.getElementById('popupTimed').classList.add('active')}},20000);
 
-// CANVAS VIDEO RENDERER
+// CANVAS VIDEO RENDERER (mobile-aware: different video + resolution per device)
 (function(){
   const canvas=document.getElementById('heroCanvas');
   if(!canvas)return;
   const ctx=canvas.getContext('2d');
+  const isMobile=window.innerWidth<=768;
+  const videoSrc=isMobile
+    ?'https://videos.pexels.com/video-files/14514795/14514795-sd_640_360_25fps.mp4'
+    :'https://videos.pexels.com/video-files/6685022/6685022-hd_1920_1080_30fps.mp4';
   const video=document.createElement('video');
-  video.src='https://videos.pexels.com/video-files/6685022/6685022-hd_1920_1080_30fps.mp4';
+  video.src=videoSrc;
   video.muted=true;video.loop=true;video.playsInline=true;video.crossOrigin='anonymous';
   function resize(){canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight}
   requestAnimationFrame(resize);window.addEventListener('resize',resize);
