@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buraq Auto Repair - Honest Auto Care in Stafford, VA</title>
+<meta name="description" content="Buraq Auto Repair provides honest, affordable auto repair in Stafford, VA. Oil changes, brakes, tires, inspections, and more. 4.7 stars on Google with 400+ reviews. Call (540) 720-2910.">
+<meta property="og:title" content="Buraq Auto Repair - Stafford, VA">
+<meta property="og:description" content="Honest auto repair with 15+ years of experience. 4.7 stars, 400+ Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kalnyesgrowth.github.io/buraq-auto/">
+<meta property="og:image" content="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Buraq Auto Repair","description":"Honest, affordable auto repair in Stafford, VA with 15+ years of experience.","url":"https://kalnyesgrowth.github.io/buraq-auto/","telephone":"(540) 720-2910","address":{"@type":"PostalAddress","streetAddress":"2053 Richmond Hwy","addressLocality":"Stafford","addressRegion":"VA","postalCode":"22554","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":"38.4429","longitude":"-77.4283"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"17:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:30","closes":"13:30"}],"priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","bestRating":"5","reviewCount":"419"}}</script>
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css2?family=bricolage-grotesque:wght@400;500;600;700;800&family=archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:hidden;scroll-behavior:smooth}
+:root{
+  --font-heading:'Bricolage Grotesque',sans-serif;
+  --font-body:'Archivo',sans-serif;
+  --dark:#0C0C0C;--dark-2:#141414;--dark-3:#1C1C1C;
+  --white:#FFFFFF;--gray:#9CA3AF;--light-gray:#E5E7EB;
+  --red:#DC2626;--red-glow:rgba(220,38,38,0.15);
+  --blue:#2563EB;--green:#16A34A;
+  --glass:rgba(255,255,255,0.04);--glass-border:rgba(255,255,255,0.08);
+  --radius:12px;--transition:all 0.3s ease;
+  --text-xs:0.694rem;--text-sm:0.833rem;--text-base:1rem;--text-lg:1.2rem;
+  --text-xl:1.44rem;--text-2xl:1.728rem;--text-3xl:2.074rem;--text-4xl:2.488rem;--text-5xl:2.986rem;
+}
+body{font-family:var(--font-body);font-size:var(--text-base);line-height:1.7;color:var(--gray);background:var(--dark)}
+h1,h2,h3,h4,h5{font-family:var(--font-heading);color:var(--white);line-height:1.15;font-weight:700}
+h1{font-size:var(--text-5xl)}h2{font-size:var(--text-4xl)}h3{font-size:var(--text-2xl)}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section-label{font-family:var(--font-body);font-size:var(--text-xs);font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:12px;display:inline-block}
+.section-title{margin-bottom:16px}
+.section-subtitle{max-width:600px;font-size:var(--text-lg);line-height:1.6}
+.btn-solid{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--red);color:var(--white);border:none;border-radius:var(--radius);font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:var(--transition)}
+.btn-solid:hover{background:#B91C1C;transform:translateY(-2px);box-shadow:0 8px 30px rgba(220,38,38,0.3)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.3);border-radius:var(--radius);font-family:var(--font-heading);font-weight:700;font-size:var(--text-sm);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:var(--transition)}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,0.06)}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* HEADER */
+.header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px 0;transition:var(--transition)}
+.header.scrolled{background:rgba(12,12,12,0.95);padding:12px 0;border-bottom:1px solid var(--glass-border)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--font-heading);font-size:var(--text-xl);font-weight:800;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo span{color:var(--red)}
+nav{display:flex;align-items:center;gap:32px}
+nav a{color:var(--gray);text-decoration:none;font-size:var(--text-sm);font-weight:500;transition:var(--transition)}
+nav a:hover{color:var(--white)}
+.nav-phone{color:var(--red);font-weight:700;font-family:var(--font-heading);display:flex;align-items:center;gap:6px}
+.nav-phone svg{width:16px;height:16px}
+.mobile-toggle{display:none;background:none;border:none;color:var(--white);cursor:pointer}
+.mobile-toggle svg{width:28px;height:28px}
+.mobile-nav{display:none;position:fixed;inset:0;background:rgba(12,12,12,0.99);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:var(--white);font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:700;text-decoration:none}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+.hero{background:url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,12,0.7) 0%,rgba(12,12,12,0.85) 100%);z-index:3}
+.hero-content{position:relative;z-index:4;max-width:700px;padding:0 24px}
+.hero-badge{display:inline-block;background:var(--red-glow);color:var(--red);font-family:var(--font-body);font-size:var(--text-xs);font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:24px}
+.hero h1{margin-bottom:20px}
+.hero-sub{font-size:var(--text-lg);color:var(--gray);margin-bottom:36px;line-height:1.7}
+.hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* ABOUT */
+.about{padding:120px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-image{border-radius:var(--radius);overflow:hidden;position:relative}
+.about-image img{width:100%;height:400px;object-fit:cover;display:block}
+.about-image::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(transparent,var(--dark))}
+.about-content .section-subtitle{margin-bottom:24px}
+.about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.highlight{padding:16px;background:var(--glass);border:1px solid var(--glass-border);border-radius:8px}
+.highlight-title{font-family:var(--font-heading);font-weight:700;color:var(--white);font-size:var(--text-sm);margin-bottom:4px}
+.highlight-text{font-size:var(--text-xs);color:var(--gray)}
+
+/* SERVICES */
+.services{padding:120px 0;position:relative}
+.services::before{content:'';position:absolute;inset:0;background:url('https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;opacity:0.04}
+.services-header{text-align:center;margin-bottom:64px;position:relative}
+.services-header .section-subtitle{margin:0 auto}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.service-card{border-radius:var(--radius);overflow:hidden;position:relative;min-height:320px;cursor:pointer;transition:var(--transition)}
+.service-card:hover{transform:translateY(-8px)}
+.service-card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform 0.5s ease}
+.service-card:hover img{transform:scale(1.08)}
+.service-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,12,12,0.95) 0%,rgba(12,12,12,0.3) 60%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:28px}
+.service-card h3{font-size:var(--text-xl);margin-bottom:8px}
+.service-card p{font-size:var(--text-sm);color:var(--gray);line-height:1.6}
+
+/* PROCESS */
+.process{padding:120px 0}
+.process-header{text-align:center;margin-bottom:64px}
+.process-header .section-subtitle{margin:0 auto}
+.timeline{position:relative;max-width:700px;margin:0 auto}
+.timeline::before{content:'';position:absolute;left:24px;top:0;bottom:0;width:2px;background:var(--glass-border)}
+.timeline-line{position:absolute;left:24px;top:0;width:2px;background:var(--red);height:0;transition:height 0.1s linear}
+.timeline-item{position:relative;padding-left:72px;margin-bottom:48px}
+.timeline-dot{position:absolute;left:14px;top:4px;width:22px;height:22px;border-radius:50%;border:2px solid var(--glass-border);background:var(--dark);display:flex;align-items:center;justify-content:center;z-index:2;transition:var(--transition)}
+.timeline-dot.active{border-color:var(--red);background:var(--red-glow)}
+.timeline-dot::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--gray);transition:var(--transition)}
+.timeline-dot.active::after{background:var(--red)}
+.timeline-step{font-family:var(--font-heading);font-size:var(--text-xs);font-weight:800;color:var(--red);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.timeline-title{font-family:var(--font-heading);font-size:var(--text-xl);color:var(--white);font-weight:700;margin-bottom:8px}
+.timeline-desc{font-size:var(--text-sm);color:var(--gray);line-height:1.7}
+
+/* WHY US */
+.why-us{padding:120px 0;position:relative}
+.why-us::before{content:'';position:absolute;inset:0;background:url('https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;opacity:0.05}
+.why-us-header{text-align:center;margin-bottom:64px;position:relative}
+.why-us-header .section-subtitle{margin:0 auto}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.why-card{background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--glass-border);border-radius:var(--radius);padding:32px;transition:var(--transition)}
+.why-card:hover{border-color:rgba(220,38,38,0.4);transform:translateY(-4px)}
+.why-icon{width:48px;height:48px;background:var(--red-glow);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.why-icon svg{width:24px;height:24px;color:var(--red)}
+.why-card h3{font-size:var(--text-lg);margin-bottom:8px}
+.why-card p{font-size:var(--text-sm);line-height:1.7}
+
+/* TESTIMONIALS */
+.testimonials{padding:120px 0;position:relative}
+.testimonials::before{content:'';position:absolute;inset:0;background:url('https://images.pexels.com/photos/5910749/pexels-photo-5910749.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;opacity:0.04}
+.testimonials-header{text-align:center;margin-bottom:64px;position:relative}
+.testimonials-header .section-subtitle{margin:0 auto}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.testimonial-card{background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--glass-border);border-radius:var(--radius);padding:32px;transition:var(--transition)}
+.testimonial-card:hover{border-color:rgba(220,38,38,0.3);transform:translateY(-4px)}
+.testimonial-stars{display:flex;gap:2px;margin-bottom:16px}
+.testimonial-stars svg{width:16px;height:16px;color:#FBBF24}
+.testimonial-text{font-size:var(--text-sm);line-height:1.8;margin-bottom:20px;font-style:italic;color:var(--light-gray)}
+.testimonial-author{display:flex;align-items:center;gap:12px}
+.testimonial-avatar{width:40px;height:40px;border-radius:50%;background:var(--red-glow);display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-weight:700;color:var(--red);font-size:var(--text-sm)}
+.testimonial-name{font-family:var(--font-heading);font-weight:600;color:var(--white);font-size:var(--text-sm)}
+.testimonial-source{font-size:var(--text-xs);color:var(--gray)}
+
+/* GUARANTEE */
+.guarantee{padding:80px 0}
+.guarantee-inner{background:linear-gradient(135deg,rgba(220,38,38,0.08),rgba(220,38,38,0.02));border:1px solid rgba(220,38,38,0.2);border-radius:var(--radius);padding:64px;text-align:center}
+.guarantee-inner h2{margin-bottom:16px}
+.guarantee-inner p{max-width:600px;margin:0 auto 24px;font-size:var(--text-lg)}
+
+/* FAQ */
+.faq{padding:120px 0}
+.faq-header{text-align:center;margin-bottom:64px}
+.faq-header .section-subtitle{margin:0 auto}
+.faq-list{max-width:700px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--glass-border);overflow:hidden}
+.faq-question{display:flex;align-items:center;justify-content:space-between;padding:20px 0;cursor:pointer;font-weight:600;font-size:var(--text-base);color:var(--white);background:none;border:none;width:100%;text-align:left;font-family:inherit;gap:16px}
+.faq-question svg{width:20px;height:20px;min-width:20px;color:var(--gray);transition:transform 0.3s ease}
+.faq-item.open .faq-question svg{transform:rotate(45deg);color:var(--red)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.faq-answer-inner{padding:0 0 20px;font-size:var(--text-sm);line-height:1.8}
+
+/* REVIEW CTA */
+.review-cta{padding:80px 0}
+.review-cta-inner{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius);padding:48px;text-align:center}
+.google-stars{display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:16px}
+.google-stars svg{width:24px;height:24px;color:#FBBF24}
+.google-rating{font-family:var(--font-heading);font-weight:800;font-size:var(--text-xl);color:var(--white);margin-left:8px}
+
+/* CONTACT */
+.contact{padding:120px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.contact-info h3{margin-bottom:16px}
+.contact-detail{display:flex;gap:16px;margin-bottom:24px}
+.contact-icon{width:44px;height:44px;min-width:44px;background:var(--red-glow);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.contact-icon svg{width:20px;height:20px;color:var(--red)}
+.contact-detail h4{font-family:var(--font-heading);font-size:var(--text-sm);font-weight:700;color:var(--white);margin-bottom:2px}
+.contact-detail p{font-size:var(--text-sm)}
+.contact-detail a{color:var(--red);text-decoration:none}
+.contact-map{margin-top:24px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--glass-border)}
+.contact-map iframe{width:100%;height:250px;border:0;filter:grayscale(1) invert(1) contrast(0.8);opacity:0.7}
+.contact-form{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius);padding:40px}
+.contact-form h3{margin-bottom:24px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:var(--text-xs);font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gray);margin-bottom:6px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;background:var(--dark);border:1px solid var(--glass-border);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:var(--text-sm);transition:var(--transition)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--red)}
+.form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239CA3AF' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+
+/* FOOTER */
+footer{background:var(--dark-2);border-top:1px solid var(--glass-border);padding:64px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-brand p{margin-top:16px;font-size:var(--text-sm);line-height:1.7;max-width:300px}
+.footer-social{display:flex;gap:12px;margin-top:20px}
+.footer-social a{width:36px;height:36px;border-radius:8px;background:var(--glass);border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--gray);transition:var(--transition)}
+.footer-social a:hover{color:var(--white);border-color:var(--red);background:var(--red-glow)}
+.footer-social a svg{width:16px;height:16px}
+.footer-col h5{font-family:var(--font-heading);font-size:var(--text-sm);font-weight:700;color:var(--white);margin-bottom:16px}
+.footer-col a{display:block;color:var(--gray);text-decoration:none;font-size:var(--text-sm);padding:4px 0;transition:var(--transition)}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid var(--glass-border);font-size:var(--text-xs);color:var(--gray)}
+.footer-bottom a{color:var(--red);text-decoration:none}
+
+/* POPUPS */
+.popup-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(4px);z-index:2000;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:var(--transition)}
+.popup-overlay.active{opacity:1;visibility:visible}
+.popup{background:var(--dark-2);border:1px solid var(--glass-border);border-radius:var(--radius);padding:40px;max-width:440px;width:90%;text-align:center;position:relative;transform:translateY(20px);transition:var(--transition)}
+.popup-overlay.active .popup{transform:translateY(0)}
+.popup-close{position:absolute;top:16px;right:16px;background:none;border:none;color:var(--gray);font-size:24px;cursor:pointer}
+.popup h3{font-size:var(--text-2xl);margin-bottom:8px}
+.popup p{margin-bottom:20px;font-size:var(--text-sm)}
+.popup input{width:100%;padding:12px 16px;background:var(--dark);border:1px solid var(--glass-border);border-radius:8px;color:var(--white);font-family:var(--font-body);margin-bottom:12px}
+.popup .btn-solid{width:100%;justify-content:center}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .testimonials-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  h1{font-size:var(--text-3xl)}h2{font-size:var(--text-2xl)}h3{font-size:var(--text-xl)}
+  body{font-size:15px}
+  nav{display:none}
+  .mobile-toggle{display:block}
+  .about-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .testimonials-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .guarantee-inner{padding:40px 24px}
+  .services::before{background-image:url('https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=800')}
+  .why-us::before{background-image:url('https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=800')}
+  .testimonials::before{background-image:url('https://images.pexels.com/photos/5910749/pexels-photo-5910749.jpeg?auto=compress&cs=tinysrgb&w=800')}
+  .hero{background-image:url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=800')}
+}
+@media(max-width:480px){
+  .hero-ctas{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="top">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">Buraq <span>Auto</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:5407202910" class="nav-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          (540) 720-2910
+        </a>
+      </nav>
+      <button class="mobile-toggle" onclick="document.querySelector('.mobile-nav').classList.add('open')" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav">
+  <button style="position:absolute;top:20px;right:24px;background:none;border:none;color:var(--white);font-size:32px;cursor:pointer" onclick="this.parentElement.classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#services" onclick="closeMobileNav()">Services</a>
+  <a href="#process" onclick="closeMobileNav()">How It Works</a>
+  <a href="#reviews" onclick="closeMobileNav()">Reviews</a>
+  <a href="#faq" onclick="closeMobileNav()">FAQ</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <a href="tel:5407202910" class="btn-solid" onclick="closeMobileNav()">(540) 720-2910</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Stafford, VA's Trusted Auto Shop</div>
+    <h1 style="font-size:var(--text-5xl);line-height:1.1;margin-bottom:16px">Buraq <span style="color:var(--red)">Auto</span> Repair</h1>
+    <p style="font-size:var(--text-xl);font-weight:700;color:var(--white);margin-bottom:12px">Honest Repairs. Fair Prices. Every Time.</p>
+    <p class="hero-sub">Family-owned auto repair with 15+ years of experience. From oil changes to engine rebuilds, we treat your car like it's ours.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-ghost">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Schedule Service
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Buraq Auto Repair workshop" loading="lazy">
+      </div>
+      <div class="about-content reveal">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">Your Neighborhood Mechanic</h2>
+        <p class="section-subtitle">Buraq Auto Repair has been serving Stafford, Fredericksburg, and the surrounding communities for over 15 years. We built our reputation on one thing: honesty. No upselling, no surprise charges, just straight talk about what your car needs.</p>
+        <p style="margin-top:16px;font-size:var(--text-sm)">Our AutoTechIQ-certified technicians use digital vehicle inspections so you can see exactly what we see. Every repair comes with a clear explanation and fair pricing.</p>
+        <div class="about-highlights">
+          <div class="highlight"><div class="highlight-title">BBB Accredited</div><div class="highlight-text">Better Business Bureau listed</div></div>
+          <div class="highlight"><div class="highlight-title">AutoTechIQ Certified</div><div class="highlight-text">Digital vehicle inspections</div></div>
+          <div class="highlight"><div class="highlight-title">All Makes &amp; Models</div><div class="highlight-text">Foreign and domestic</div></div>
+          <div class="highlight"><div class="highlight-title">Fair Pricing</div><div class="highlight-text">No surprise charges, ever</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Complete Auto Repair Services</h2>
+      <p class="section-subtitle">From routine maintenance to complex repairs, our experienced technicians handle it all under one roof.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <img src="https://images.pexels.com/photos/4480505/pexels-photo-4480505.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Oil change service" loading="lazy" width="600" height="400">
+        <div class="service-card-overlay">
+          <h3>Oil Changes</h3>
+          <p>Conventional, synthetic blend, and full synthetic oil changes with multi-point inspection included.</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <img src="https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Brake repair" loading="lazy" width="600" height="400">
+        <div class="service-card-overlay">
+          <h3>Brake Service</h3>
+          <p>Pads, rotors, calipers, brake fluid flush, and complete brake system diagnostics and repair.</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <img src="https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tire service" loading="lazy" width="600" height="400">
+        <div class="service-card-overlay">
+          <h3>Tires &amp; Alignment</h3>
+          <p>Tire sales, mounting, balancing, rotation, and precision wheel alignment for all vehicles.</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <img src="https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Virginia state inspection" loading="lazy" width="600" height="400">
+        <div class="service-card-overlay">
+          <h3>VA State Inspection</h3>
+          <p>Licensed Virginia state safety and emissions inspections. Fast turnaround, no appointment needed.</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <img src="https://images.pexels.com/photos/5835343/pexels-photo-5835343.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Engine diagnostics" loading="lazy" width="600" height="400">
+        <div class="service-card-overlay">
+          <h3>Engine &amp; Diagnostics</h3>
+          <p>Check engine light, computer diagnostics, engine repair, timing belts, and complete drivetrain service.</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <img src="https://images.pexels.com/photos/279949/pexels-photo-279949.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pre-purchase inspection" loading="lazy" width="600" height="400">
+        <div class="service-card-overlay">
+          <h3>Pre-Purchase Inspection</h3>
+          <p>Buying a used car? We'll give you an honest assessment of its condition before you commit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-title">Simple, Transparent Service</h2>
+      <p class="section-subtitle">No runaround. No mystery charges. Here's exactly what to expect when you bring your car to Buraq.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-step">Step 01</div>
+        <div class="timeline-title">Call or Stop By</div>
+        <div class="timeline-desc">Give us a call at (540) 720-2910 or just drive in. Walk-ins welcome for inspections and quick services.</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-step">Step 02</div>
+        <div class="timeline-title">Free Diagnosis</div>
+        <div class="timeline-desc">We'll inspect your vehicle and explain exactly what's going on. No jargon, no pressure, just honest information.</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-step">Step 03</div>
+        <div class="timeline-title">Transparent Quote</div>
+        <div class="timeline-desc">You get a clear, written estimate before any work starts. We only proceed when you approve the price.</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-step">Step 04</div>
+        <div class="timeline-title">Quality Repair</div>
+        <div class="timeline-desc">Our certified technicians complete the work and provide personal updates on your vehicle's status throughout.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us">
+  <div class="container">
+    <div class="why-us-header reveal">
+      <span class="section-label">Why Buraq</span>
+      <h2 class="section-title">Why Stafford Trusts Us</h2>
+      <p class="section-subtitle">400+ five-star reviews don't happen by accident. Here's what sets us apart.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Honest &amp; Transparent</h3>
+        <p>We show you exactly what's wrong with digital inspections. No unnecessary repairs, no inflated quotes.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Fast Turnaround</h3>
+        <p>Same-day service for most repairs. We know you need your car back, and we work efficiently to make it happen.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <h3>Family-Owned Care</h3>
+        <p>We treat every customer like family. Chris and the team take time to explain everything and answer your questions.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+        <h3>Fair Pricing</h3>
+        <p>Competitive rates without cutting corners. We'll never charge you for work you don't need.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3>All Makes &amp; Models</h3>
+        <p>Honda, Toyota, Ford, BMW, Mercedes, Hyundai. We work on foreign and domestic vehicles of every kind.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Certified Technicians</h3>
+        <p>AutoTechIQ certified with factory-level diagnostic equipment. Professional results every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <span class="section-label">Real Reviews</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Scraped directly from Google. Real words from real customers.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testimonial-text">"I have utilized Buraq's services on several occasions and have consistently been impressed. Their commitment to honesty is commendable, and I particularly appreciate the mechanics' proactive approach in providing personal updates on the status of my vehicle."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">DR</div>
+          <div><div class="testimonial-name">Dwight Rosse</div><div class="testimonial-source">Google Review</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testimonial-text">"Good customer service and reliable pricing. They explained everything clearly and didn't try to push any unnecessary work. Will definitely be coming back for all my car's needs."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JP</div>
+          <div><div class="testimonial-name">Jawid Pardes</div><div class="testimonial-source">Google Review</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p class="testimonial-text">"The people here are super nice and helpful. They got my car fixed quickly and the price was very fair. This is my go-to shop now. Highly recommend Buraq to anyone in the Stafford area."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MC</div>
+          <div><div class="testimonial-name">Michael Coppedge</div><div class="testimonial-source">Google Review</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee-inner reveal">
+      <span class="section-label">Our Promise</span>
+      <h2>No Surprises. Guaranteed.</h2>
+      <p>Every repair comes with a written estimate upfront. If the final cost exceeds our quote, we cover the difference. That's the Buraq promise.</p>
+      <a href="#contact" class="btn-solid">Get a Free Estimate</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Quick answers about our services, pricing, and process.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question" type="button">Do I need an appointment?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Walk-ins are welcome for state inspections and quick services. For larger repairs, we recommend calling ahead at (540) 720-2910 so we can reserve time for your vehicle.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" type="button">What are your hours?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Monday through Friday 8:30 AM to 5:30 PM, and Saturday 8:30 AM to 1:30 PM. We are closed on Sundays.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" type="button">Do you work on all car brands?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. We service all makes and models, both foreign and domestic. Honda, Toyota, Ford, Chevrolet, BMW, Mercedes, Hyundai, Kia, and more.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" type="button">How much does an oil change cost?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Oil change pricing depends on your vehicle and oil type (conventional, synthetic blend, or full synthetic). Call us at (540) 720-2910 for an exact quote. We always price competitively.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" type="button">Do you offer pre-purchase inspections?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. If you're buying a used car, bring it to us for a thorough pre-purchase inspection. We'll give you an honest assessment of the vehicle's condition so you can make an informed decision.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" type="button">Do you accept credit cards?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, we accept all major credit cards, debit cards, and cash.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOOGLE REVIEW CTA -->
+<section class="review-cta">
+  <div class="container">
+    <div class="review-cta-inner reveal">
+      <div class="google-stars">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" opacity="0.4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span class="google-rating">4.7</span>
+      </div>
+      <h2>Had Great Service?</h2>
+      <p>Help your neighbors find an honest mechanic. Leave us a quick Google review and get 10% off your next oil change.</p>
+      <a href="https://www.google.com/search?q=Buraq+Auto+Repair+Stafford+VA+reviews" class="btn-solid" target="_blank" rel="noopener">Leave a Google Review</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Schedule Your Service</h2>
+        <div class="contact-detail">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div><h4>Phone</h4><p><a href="tel:5407202910">(540) 720-2910</a></p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Address</h4><p>2053 Richmond Hwy<br>Stafford, VA 22554</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><h4>Hours</h4><p>Mon-Fri: 8:30 AM - 5:30 PM<br>Saturday: 8:30 AM - 1:30 PM<br>Sunday: Closed</p></div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5!2d-77.4283!3d38.4429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDI2JzM0LjQiTiA3N8KwMjUnNDEuOSJX!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" title="Buraq Auto Repair location"></iframe>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3>Request a Quote</h3>
+        <form onsubmit="event.preventDefault();this.style.display='none';document.getElementById('formSuccess').style.display='block'">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" required placeholder="(555) 123-4567">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="vehicle">Vehicle (Year, Make, Model)</label>
+            <input type="text" id="vehicle" required placeholder="e.g. 2019 Honda Civic">
+          </div>
+          <div class="form-group">
+            <label for="serviceType">Service Needed</label>
+            <select id="serviceType" required>
+              <option value="">Select a service...</option>
+              <option>Oil Change</option>
+              <option>Brake Service</option>
+              <option>Tires &amp; Alignment</option>
+              <option>VA State Inspection</option>
+              <option>Engine Diagnostics</option>
+              <option>Pre-Purchase Inspection</option>
+              <option>Other Repair</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Describe the Issue</label>
+            <textarea id="message" rows="3" placeholder="What's going on with your vehicle?"></textarea>
+          </div>
+          <button type="submit" class="btn-solid" style="width:100%;justify-content:center">Get Free Estimate</button>
+        </form>
+        <div id="formSuccess" style="display:none;text-align:center;padding:24px;background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.3);border-radius:8px;color:#16A34A;font-weight:600">Demo form submitted. In the live version, this sends directly to your phone. Call (540) 720-2910 now.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Buraq <span>Auto</span></div>
+        <p>Honest auto repair in Stafford, VA. Serving the community for over 15 years with fair prices and quality workmanship.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/BuraqAutoService/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="#services">Oil Changes</a>
+        <a href="#services">Brake Service</a>
+        <a href="#services">Tires &amp; Alignment</a>
+        <a href="#services">State Inspection</a>
+        <a href="#services">Engine Diagnostics</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#about">About Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#process">How It Works</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="tel:5407202910">(540) 720-2910</a>
+        <a href="#contact">Get a Quote</a>
+        <a href="https://www.facebook.com/BuraqAutoService/" target="_blank" rel="noopener">Facebook Page</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>2026 Buraq Auto Repair. All rights reserved.</span>
+      <span>Demo site by <a href="https://kalnyesgrowth.com" target="_blank" rel="noopener">KalnyesGrowth</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- POPUPS -->
+<div class="popup-overlay" id="popupExit">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup('popupExit')">&times;</button>
+    <h3>Before You Go...</h3>
+    <p>Get a free vehicle health check with your first visit. Just mention this offer.</p>
+    <input type="tel" placeholder="Enter your phone number">
+    <button class="btn-solid" onclick="closePopup('popupExit')">Claim Free Check</button>
+  </div>
+</div>
+<div class="popup-overlay" id="popupScroll">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup('popupScroll')">&times;</button>
+    <h3>Need a Quick Quote?</h3>
+    <p>Tell us what's going on with your car and we'll give you an honest estimate over the phone.</p>
+    <a href="tel:5407202910" class="btn-solid" style="width:100%;justify-content:center">(540) 720-2910 - Call Now</a>
+  </div>
+</div>
+<div class="popup-overlay" id="popupTimed">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup('popupTimed')">&times;</button>
+    <h3>First-Time Customer?</h3>
+    <p>Schedule your first service and get 10% off. We want to earn your trust.</p>
+    <input type="email" placeholder="Enter your email">
+    <button class="btn-solid" onclick="closePopup('popupTimed')">Get 10% Off</button>
+  </div>
+</div>
+
+<script>
+// MOBILE NAV
+function closeMobileNav(){document.querySelector('.mobile-nav').classList.remove('open')}
+
+// HEADER SCROLL
+window.addEventListener('scroll',()=>{document.querySelector('.header').classList.toggle('scrolled',window.scrollY>50)});
+
+// REVEAL ON SCROLL
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// TIMELINE ANIMATION
+const timeline=document.querySelector('.timeline');
+if(timeline){
+  const timelineLine=timeline.querySelector('.timeline-line');
+  const dots=timeline.querySelectorAll('.timeline-dot');
+  window.addEventListener('scroll',()=>{
+    const rect=timeline.getBoundingClientRect();
+    const timelineTop=rect.top;
+    const timelineHeight=rect.height;
+    const windowHeight=window.innerHeight;
+    const progress=Math.min(Math.max((windowHeight-timelineTop)/(timelineHeight+windowHeight*0.5),0),1);
+    timelineLine.style.height=(progress*100)+'%';
+    dots.forEach(dot=>{
+      const dotRect=dot.getBoundingClientRect();
+      dot.classList.toggle('active',dotRect.top<windowHeight*0.7);
+    });
+  });
+}
+
+// FAQ
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    const answer=item.querySelector('.faq-answer');
+    const isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(fi=>{fi.classList.remove('open');fi.querySelector('.faq-answer').style.maxHeight=null});
+    if(!isOpen){item.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px'}
+  });
+});
+
+// POPUPS
+const popupState={exit:false,scroll:false,timed:false};
+function closePopup(id){document.getElementById(id).classList.remove('active')}
+document.querySelectorAll('.popup-overlay').forEach(o=>{o.addEventListener('click',(e)=>{if(e.target===o)closePopup(o.id)})});
+document.addEventListener('mouseleave',(e)=>{
+  if(e.clientY<0&&!popupState.exit){popupState.exit=true;document.getElementById('popupExit').classList.add('active')}
+});
+window.addEventListener('scroll',()=>{
+  const scrollPercent=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight);
+  if(scrollPercent>0.5&&!popupState.scroll){popupState.scroll=true;document.getElementById('popupScroll').classList.add('active')}
+});
+setTimeout(()=>{if(!popupState.timed&&!document.querySelector('.popup-overlay.active')){popupState.timed=true;document.getElementById('popupTimed').classList.add('active')}},20000);
+
+// CANVAS VIDEO RENDERER
+(function(){
+  const canvas=document.getElementById('heroCanvas');
+  if(!canvas)return;
+  const ctx=canvas.getContext('2d');
+  const video=document.createElement('video');
+  video.src='https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4';
+  video.muted=true;video.loop=true;video.playsInline=true;video.crossOrigin='anonymous';
+  function resize(){canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight}
+  requestAnimationFrame(resize);window.addEventListener('resize',resize);
+  function draw(){
+    if(video.readyState>=2){
+      const vw=video.videoWidth,vh=video.videoHeight;
+      const cw=canvas.width,ch=canvas.height;
+      const scale=Math.max(cw/vw,ch/vh);
+      const w=vw*scale,h=vh*scale;
+      ctx.drawImage(video,(cw-w)/2,(ch-h)/2,w,h);
+    }
+    requestAnimationFrame(draw);
+  }
+  video.addEventListener('canplay',()=>{video.play().catch(()=>{});draw()});
+  video.load();
+})()
+</script>
+</body>
+</html>
